@@ -1,0 +1,99 @@
+let string = "helloXYZABCSushjV";
+
+console.log(string[string.length-1])
+
+let loggedIn = true;
+let isMember = true;
+
+let str = loggedIn && isMember ? "Access granted" : "Access denied";
+console.log(str);
+
+for (let i = 1; i<16; i++) {
+    if (i % 5 == 0) console.log("ASAP FRONTEND");
+    else if (i % 2 == 0) console.log("ASAP");
+    else console.log("FRONTEND");
+}
+
+for (let i = 0; i<string.length; i++) {console.log(string[i])}
+
+function convertUSDToAUD(USD){
+    return USD * 1.5;
+}
+
+//arrow func
+
+let convertUsdToAud = (USD) => {
+    return USD * 1.5;
+}
+console.log(convertUsdToAud(100)); 
+console.log(convertUSDToAUD(100));
+
+let array = [50, 70, 5, 8 , 7, 90];
+console.log(array[0]);
+console.log(array[array.length-1]);
+console.log(array);
+
+
+// array 2 and array 3 will have the same elements
+
+let array2 = array.filter((element) => {
+    if (element > 10) return true;
+});
+console.log(array2);
+
+array3 = [];
+array.filter((element)=>{
+    if (element > 10) array3.push(element);
+});
+console.log(array3);
+
+ages = [20,22,26,16,20]
+
+let permitted = ages.filter((age) => {
+    if (age >= 18) return true;
+})
+console.log(permitted);
+
+USD = [1,5,10,20,100,500]
+let AUD = USD.map((element)=>{
+    return element * 1.5;
+});
+console.log(AUD)
+
+let users = []
+
+function signup (email,password,name,discord,subscription,lessonsCompleted) {
+    let userobj = {
+        email : email,
+        password : password,
+        name : name,
+        discord : discord,
+        subscription : subscription,
+        lessonsCompleted : lessonsCompleted
+    }
+    users.push(userobj);
+}
+
+signup("abc@gmail.com","abcd1234","Kevin","Kev98","VIP",[1,2,3]);
+
+console.log(users)
+
+
+
+//DOM
+
+console.log(document.querySelector("#firsth1"));
+console.log(document.getElementById("secondh1"));
+
+function change() {
+    document.querySelector("#firsth1").innerHTML = "Learning WEB DEV for the 4th time";
+    document.querySelector("#firsth1").style.color = "red";
+    document.querySelector("#firsth1").style.fontSize = "50px";
+    document.querySelector("#firsth1").style.border = "solid black 5px";
+    document.querySelector("#firsth1").style.padding = "20px";
+    document.querySelector("#firsth1").style.margin = "20px";
+    document.querySelector("#firsth1").style.background = "blue";
+    document.querySelector("button").style.backgroundColor = "lightgreen"
+};
+
+
