@@ -97,3 +97,74 @@ function change() {
 };
 
 
+// rest paramater
+function grantAccess(role, ...names) {
+    names.forEach((name) => {
+        console.log(`Access granted to ${name} with role ${role}`);
+    });
+}
+grantAccess("admin","Kevin","Sushant","Alice","Bob");
+
+function getLabelsHtml(text, sender, ...staff) {
+    const labelsHtml = staff.map((staffMember) => {
+        `<div class="label">
+            <h1>${text}</h1>
+            <p>From: ${sender}</p>
+            <p>To: ${staffMember}</p>
+        </div>`
+    }).join('')
+    return labelsHtml;
+}
+
+// Aynchronous JS
+/*
+API - application programming interface
+used to connect our program with someone else's program
+
+// fetch request
+
+fetch(full_url)
+.then(response => response.json())
+.then(data => {
+    const imageElement = document.createElement('img')
+    imageElement.src = data.message
+    imageElement.alt = "This is an image of:"
+    document.getElementById('img-container').appendChild(imageElement)
+    })
+
+async function fetchData() {
+    const response = await fetch(full_url)
+    const data = await response.json()
+    console.log(data)
+}
+
+// Promises
+fetch(full_url)
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error))
+.finally(() => console.log('Fetch attempt finished.'))
+
+
+POST request
+try {
+const response = await fetch('https://example.com/api/data', {
+    method: 'POST',
+    body: JSON.stringify({
+    title: 'hi',
+    body: 'hello world',
+    userId: 1}),
+    headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+    }
+})
+
+
+const promise = new Promise((resolve, reject) => {
+    const success = Math.random() > 0.5; // Simulate success or failure
+    if (success) {
+        resolve('Operation was successful!');
+    }
+    else {
+        reject('Operation failed.');})
+*/
