@@ -1,0 +1,17 @@
+#mybox{
+    color: greenyellow;
+    background-color: azure;
+    display: flex;
+    text-align: center;
+    border: 3px solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    max-width: 200px;
+    max-height: 200px;
+    align-items: center;
+    justify-content: center;;
+}

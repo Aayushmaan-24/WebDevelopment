@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        button{
+            background-color: black;
+            color: beige;
+            font-size: 20px;
+            border: none;
+            padding: 15px 32px;
+            cursor: pointer;
+            border-radius: 50px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .subscribed{
+            background-color: beige;
+            color: black
+        }
+    </style>
+</head>
+<body>
+    <p>YouTube Subscribe Button</p>
+    <button class="button" onclick="
+    const button = document.querySelector('.button');
+    if(button.innerHTML === 'Subscribe'){
+    button.innerHTML = 'Subscribed';
+    button.classList.add('subscribed');
+    }
+    else{
+    button.innerHTML = 'Subscribe';
+    button.classList.remove('subscribed');}">
+    Subscribe
+    </button>
+</body>
+</html>

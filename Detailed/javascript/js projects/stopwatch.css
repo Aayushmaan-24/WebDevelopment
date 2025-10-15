@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 100%, 2%);
+}
+#myH1{
+    font-size: 5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: hsl(98, 88%, 48%);
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 5px dashed;
+    border-radius: 50px;
+    background-color: rgb(9, 249, 245);
+}
+#display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsl(3, 98%, 48%);
+    text-shadow: 2px 2px 2px hsla(241, 94%, 49%, 0.75);
+    margin: 25px;
+}
+#controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+#startBtn{
+    background-color:greenyellow;
+}
+#startBtn:hover{
+    background-color:rgb(55, 84, 11);
+    color:brown
+}
+#stopBtn{
+    background-color: hsl(10, 90%, 50%);
+}
+#stopBtn:hover{
+    background-color: hsl(10, 86%, 16%);
+    color:brown
+}
+#resetBtn{
+    background-color: hsl(47, 94%, 48%);
+}
+#resetBtn:hover{
+    background-color: hsl(50, 91%, 23%);
+    color:brown
+}

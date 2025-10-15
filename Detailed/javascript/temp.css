@@ -1,0 +1,39 @@
+body{
+    color: greenyellow;
+    background-color: white(227, 50, 50);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: auto;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+h1{
+    color: lightseagreen;
+}
+#textbox{
+    border-radius: 50px;
+    margin-bottom: 10px;
+    height: 20px;
+    text-align: center;
+}
+#convert{
+    border-radius: 20px;
+    margin-top: 10px;
+    height: 50px;
+}
+form{
+    border-color: aqua;
+    border-width: 5px;
+    border: 5px;
+    border-style:dashed;
+    background-color: rgb(5, 3, 0);
+    margin: auto;
+    max-width: 300px;
+    max-height: 400px;
+    border-radius: 50px;
+    box-shadow:5px 5px 5px 5px rgb(207, 6, 6);
+}
+button:hover{
+    background-color: lightgreen;
+    color: rgb(27, 155, 247);
+}

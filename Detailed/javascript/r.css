@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    color: chartreuse;
+    padding: 50px;
+    margin: 50px;
+}
+button{
+    background-color: aqua;
+    color:navajowhite;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: crosshair;
+    text-align: center;
+    
+}
+label{
+    font-size: 3em;
+}

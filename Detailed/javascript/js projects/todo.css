@@ -1,0 +1,40 @@
+#add {
+    background-color: chartreuse;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: stretch;
+}
+
+#add:hover {
+    background-color: rgb(62, 111, 13);
+    color: rgb(254, 255, 255);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.list , .head{
+    display: grid;
+    grid-template-columns: 300px 300px 200px;
+    column-gap: 10px;
+    margin: 30px;
+    row-gap: 10px;
+    max-height: fit-content;
+    align-items: center;
+}
+.input , .date{
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.delete{
+    background-color: darkred;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}

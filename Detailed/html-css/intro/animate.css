@@ -1,0 +1,32 @@
+@keyframes highlighttext { 
+    0% { 
+        color: red; 
+    }
+    
+    50% {
+        color: green;
+        font-size: 10px;
+    }
+     
+    100% { 
+        color: blue; 
+    }
+}
+
+span {
+    animation: highlighttext 1s infinite;
+}
+
+/*
+animation-name:             none 
+animation-duration:         0s 
+animation-timing-function:  ease 
+animation-delay:            0s 
+animation-iteration-count:  1 
+animation-direction:        normal 
+animation-fill-mode:        none 
+animation-play-state:       running 
+animation-timeline:         auto 
+*/
+
+

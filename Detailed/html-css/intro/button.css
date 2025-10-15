@@ -1,0 +1,109 @@
+body{
+    vertical-align: top;
+}
+#s{
+    background-color: rgb(249, 4, 4);
+    color: white;
+    border: none;
+    max-height:min-content;
+    max-width:max-content;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+/*Do not put transition in :hover*/
+/*opacity(0-1) : makes the element see through
+1 - opaque, 0-transparent, anything in between makes the element color lighter*/
+
+#s:hover{ /*on hovering*/
+    background-color: rgb(231, 104, 104);
+
+}
+#s:active{ /*on clicking */
+    background-color: rgb(206, 92, 92);
+}
+#j{
+    background-color: white;
+    color: aqua;
+    border-width: 1px;
+    border-color: blue;
+    max-height:min-content;
+    max-width:max-content;
+    padding: 9px 9px 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out; /*transition syntax:display: transition: property time effect;*/
+    transition: color 0.25s ease-in-out;
+}
+#j:hover{
+    background-color: aqua;
+    color: white;
+
+}
+#j:active{
+    opacity: 0.5;
+}
+#t{
+    max-height:min-content;
+    max-width:max-content;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(62, 120, 235);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: box-shadow 0.15 ease-in-out;
+    /*Syntax: box-shadow: <horizontal position> <vertical position> <blur> <color> works like normal x - y axes
+    rgba - r g b then opacity(1 - very dark , 0 very light)*/
+}
+#t:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+button{
+    margin: 5px;
+}
+input{
+    width: 600px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    display: block;
+    margin: auto;
+}
+img{
+    width:max-content;
+    display: block;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: auto;
+    align-items: center;
+}
+.p1,.p2{
+    font-size: 20px;
+    width: 200px; /* Define a fixed width for the boxes */
+    height:50px; /* Auto adjusts height based on content */
+    margin: 30px auto; /* Center the boxes horizontally */
+    background-color: rgb(210, 208, 208); /* Background color */
+    display: inline-block; /* Treat the <p> tags like boxes */
+    text-align: center; /* Center the text inside the box */
+    border: none;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    
+}
+#google{
+    margin: auto;
+    text-align: center;
+}
