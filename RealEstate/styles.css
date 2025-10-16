@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(135deg, #6a7ed1 0%, #c2b6cf 100%);
+    font-family: 'Times New Roman', Times, serif, cursive;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#heading{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 20px;
+}
+
+.property-card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    width: 600px;
+    height: 400px;
+    font-size: 20px;
+    box-sizing: border-box;
+    overflow: auto; /* keep content confined within the box */
+    overflow-wrap: anywhere; /* wrap long words/URLs */
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.property-card img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+.property-card h2,
+.property-card p {
+    margin: 0 0 8px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
