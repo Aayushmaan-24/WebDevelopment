@@ -48,3 +48,46 @@
     background-color: red;
     float: right;
 }
+
+/*
+
+/* Class Selector - Targeting elements with class 'primary-text' 
+      .primary-text{
+          color: blue;
+      }
+
+        /* ID Selector - Targeting element with ID 'unique-element' 
+        #unique-element{
+            font-weight: bold;
+        }
+     
+
+        /* Attribute Selector - Targeting input type 'text' 
+        input[type="text"]{
+            border: 2px solid green;
+        }
+     
+
+        /* Pseudo-class Selector - Targeting links on hover 
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+      
+
+        /* Pseudo-element Selector - Targeting first letter of paragraphs 
+        p::first-letter{
+            font-size: 200%;
+            color: red;
+        }
+
+        media query breakpoints
+        extra small < 576px
+        small ≥ 576px
+        medium ≥ 768px
+        large ≥ 992px
+        extra large ≥ 1200px
+
+*/

@@ -1,0 +1,47 @@
+/*DEFAULT*/
+.header{
+    background-color: yellow;
+    height: 100vh;
+}
+/*larger phones*/
+@media(min-width: 375px){
+    .header{
+        background-color: blue;
+    }
+}
+/*tablets*/
+@media(min-width: 768px){
+    .header{
+        background-color: green;
+    }
+}
+/*small desktops*/
+@media(min-width: 992px){
+    .header{
+        background-color: orange;
+    }
+}
+/*larger desktops*/
+@media(min-width: 1200px){
+    .header{
+        background-color: purple;
+    }
+}
+
+/*orientation media queries*/
+.box{
+    width: 100%;
+    height: 200px;
+}
+@media screen and (orientation: landscape){
+    .box{
+        background-color: lightblue;
+    }
+}
+
+@media screen and (orientation: portrait){
+    .box{
+        background-color: lightgreen;
+    }
+}
+
