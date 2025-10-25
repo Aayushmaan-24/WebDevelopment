@@ -1,0 +1,11 @@
+.buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
