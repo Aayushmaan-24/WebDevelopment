@@ -167,4 +167,22 @@ const promise = new Promise((resolve, reject) => {
     }
     else {
         reject('Operation failed.');})
+
+anonymous function
+// IIF
+// declaration 
+(function () {
+console.log("Anonymous function executed");
+})
+
+//invoke: add two brackets at the end of the declaration with/without parameters
+
+(function () {
+console.log("Anonymous function executed");
+})();
+
+
+
+
+
 */
