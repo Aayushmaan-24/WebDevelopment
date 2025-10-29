@@ -195,5 +195,11 @@ person.age = 30;
 person["city"] = "New York";
 person["country"] = "USA";
 
-
+console.log(person.keys); // property names
+console.log(person.values); // property values
+console.log(person.keys.length); // number of properties
+console.log(person.hasOwnProperty("city")); // true/false based on the presence of property
+Object.assign(target, source) // copies properties from source to target object
+person.delete("age") // deletes the specified property from the object
+Object.freeze(person) // prevents any modifications to the object
 */
