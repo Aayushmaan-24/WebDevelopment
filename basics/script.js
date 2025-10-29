@@ -202,4 +202,35 @@ console.log(person.hasOwnProperty("city")); // true/false based on the presence 
 Object.assign(target, source) // copies properties from source to target object
 person.delete("age") // deletes the specified property from the object
 Object.freeze(person) // prevents any modifications to the object
+
+// objects in array
+
+const userObj = [
+{name: "Alice", age: 25},
+{name: "Bob", age: 30},
+{name: "Charlie", age: 35}
+];
+
+
+// for each -> makes a new array or gives updated values without modifying the original array
+let numbers = [1,2,3,4]
+const doubled = numbers.forEach((num) => {
+    num * 2})
+
+// map
+const doubledMap = numbers.map((num) => {
+    return num * 2})
+
+// reduce -> returns a single value after iterating through the array
+const sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue}, 0)
+
+
+// find -> returns the first element that satisfies the condition
+const found = numbers.find((num) => {
+    return num > 2})
+
+// filter -> returns a new array with all elements that satisfy the condition
+const filtered = numbers.filter((num) => {
+    return num > 2})
 */
