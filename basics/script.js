@@ -181,8 +181,19 @@ console.log("Anonymous function executed");
 console.log("Anonymous function executed");
 })();
 
+// adding properties to objects
 
+// create object
+let person = {
+    name: "John"
+};
 
+// adding using dot notation
+person.age = 30;
+
+// adding using bracket notation
+person["city"] = "New York";
+person["country"] = "USA";
 
 
 */
