@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+span.auto-type{
+    border-right: 2px solid white;
+    padding-right: 5px;
+    color: #45ed07;
+    text-shadow: rgb(15, 217, 236) 0 0 4px;
+}
