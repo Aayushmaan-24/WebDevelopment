@@ -233,4 +233,12 @@ const found = numbers.find((num) => {
 // filter -> returns a new array with all elements that satisfy the condition
 const filtered = numbers.filter((num) => {
     return num > 2})
+
+// To dynamically inject HTML content into a webpage using javscript
+1. select the target element using document.querySelector or document.getElementById
+2. create new HTML elements using document.createElement
+3. set the content and attributes of the new elements
+4. append the new elements to the target element using appendChild or innerHTML 
+
+
 */
