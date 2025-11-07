@@ -240,5 +240,51 @@ const filtered = numbers.filter((num) => {
 3. set the content and attributes of the new elements
 4. append the new elements to the target element using appendChild or innerHTML 
 
+// Step 1: Define the extractAuthors function with arrow syntax
+const extractAuthors = (books) => {
+  // Step 2: Check if any book object is missing the 'author' property
+  // Use the 'some' method to perform this check
+  // If a book is missing the 'author' property, throw an error
+  if (books.some(book => !book.hasOwnProperty('author'))) {
+    throw new Error("Invalid book object - 'author' property missing");
+  }
 
+  // Step 3: Use the 'map' method to transform the array of book objects
+  // Extract only the 'author' property from each book
+  return books.map(book => book.author);
+};
+
+// Example usage:
+const libraryBooks = [
+  { title: 'Brave New World', author: 'Aldous Huxley' },
+  { title: 'The Catcher in the Rye', author: 'J.D. Salinger' }
+];
+
+// Step 4: Test the function with the example array
+console.log(extractAuthors(libraryBooks)); // Expected output: ['Aldous Huxley', 'J.D. Salinger']
+
+// Additional test cases to demonstrate error handling:
+try {
+  const invalidBooks = [
+    { title: 'Valid Book', author: 'Valid Author' },
+    { title: 'Invalid Book' } // Missing author property
+  ];
+  console.log(extractAuthors(invalidBooks));
+} catch (error) {
+  console.log(error.message); // Output: "Invalid book object - 'author' property missing"
+}
+
+// Test with empty array
+console.log(extractAuthors([])); // Output: []
+
+// Test with books that have null/undefined authors
+try {
+  const booksWithNullAuthor = [
+    { title: 'Book 1', author: 'Author 1' },
+    { title: 'Book 2', author: null }
+  ];
+  console.log(extractAuthors(booksWithNullAuthor)); // Output: ['Author 1', null]
+} catch (error) {
+  console.log(error.message);
+}
 */
