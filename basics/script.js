@@ -287,4 +287,25 @@ try {
 } catch (error) {
   console.log(error.message);
 }
+
+
+traversing the dom
+
+const childEl = document.querySelector('.child-class');
+const parentEl = childEl.parentNode;
+const grandParentEl = parentEl.parentNode;
+
+const pareEl = document.querySelector('.parent-class');
+const firstChildEl = pareEl.childNodes[0]; // First child node
+const secondChildEl = pareEl.childNodes[1]; // Second child
+
+creating a new element
+
+function createNewElement(newTask) {
+    const taskEl = document.createElement('div');
+    taskEl.setAttribute('class', 'task');
+    const taskContentEl = document.createTextNode(newTask);
+    taskEl.appendChild(taskContentEl);
+}
+
 */
