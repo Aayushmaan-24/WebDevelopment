@@ -329,4 +329,16 @@ const newContentText = document.createTextNode(newContent);
 newContentEl.appendChild(newContentText);
 existingContent.parentNode.replaceChild(newContentEl, existingContent);
 }
+
+
+// remove child
+function removeItem(itemID){
+
+const itemEl = document.getElementById(itemID);
+itemEl.parentNode.removeChild(itemEl);
+}
+
+// classList
+
+
 */
