@@ -319,4 +319,14 @@ const containerEl = document.querySelector('#students-container');
 const firstStudentEl = containerEl.firstChild;
 containerEl.insertBefore(studentEl, firstStudentEl);
 }
+
+
+// replace child
+function replaceContent(contentID, newContent){
+const existingContent = document.getElementById(contentID);
+const newContentEl = document.createElement('div');
+const newContentText = document.createTextNode(newContent);
+newContentEl.appendChild(newContentText);
+existingContent.parentNode.replaceChild(newContentEl, existingContent);
+}
 */
