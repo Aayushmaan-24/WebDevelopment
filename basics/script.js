@@ -306,6 +306,17 @@ function createNewElement(newTask) {
     taskEl.setAttribute('class', 'task');
     const taskContentEl = document.createTextNode(newTask);
     taskEl.appendChild(taskContentEl);
+    document.querySelector('#tasks-container').appendChild(taskEl);
 }
 
+// insert before
+function addStudent(name, grade){
+const studentEl = document.createElement('div');
+studentEl.setAttribute('class', 'student');
+const studentContentEl = document.createTextNode(`${name} - ${grade}`);
+studentEl.appendChild(studentContentEl);
+const containerEl = document.querySelector('#students-container');
+const firstStudentEl = containerEl.firstChild;
+containerEl.insertBefore(studentEl, firstStudentEl);
+}
 */
