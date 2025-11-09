@@ -339,6 +339,13 @@ itemEl.parentNode.removeChild(itemEl);
 }
 
 // classList
+const boxEl = document.querySelector('.box');
+
+boxEl.classList.add('highlighted');
+boxEl.classList.remove('highlighted');
+boxEl.classList.toggle('highlighted');
+const hasClass = boxEl.classList.contains('highlighted');
+console.log(hasClass);
 
 
 */
